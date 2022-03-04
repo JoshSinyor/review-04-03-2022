@@ -1,9 +1,9 @@
 # frozen_string_literal: true
 
-def bandpass_filter(array)
+def bandpass_filter(array,lowerlimit = 40)
   array.map! do |x|
-    if x < 40
-      x = 40
+    if x < lowerlimit
+      x = lowerlimit
     elsif x > 1000
       x = 1000
     else

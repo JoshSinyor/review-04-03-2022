@@ -26,4 +26,12 @@ describe 'bandpass_filter' do
   it "filters out multiple frequencies that are too low" do
     expect(bandpass_filter([990,1000,1010,1020])).to eq [990,1000,1000,1000]
   end
+
+  it "filters out frequencies that are below an overridden lower limit" do
+    expect(bandpass_filter([50],100)).to eq [100]
+  end
+
+  it "filters out multiple frequencies that are below an overridden lower limit" do
+    expect(bandpass_filter([30,40,50,100,110],100)).to eq [100,100,100,100,110]
+  end
 end
