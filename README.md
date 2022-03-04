@@ -1,8 +1,8 @@
 ![Ruby Version](https://img.shields.io/badge/ruby-3.0-red?logo=ruby)
-![License](https://img.shields.io/github/license/JoshSinyor/ruby-template)
-![Code Size](https://img.shields.io/github/languages/code-size/JoshSinyor/ruby-template)
+![License](https://img.shields.io/github/license/JoshSinyor/review-04-03-2022)
+![Code Size](https://img.shields.io/github/languages/code-size/JoshSinyor/review-04-03-2022)
 ![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen?&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGRlZnMvPjxwYXRoIGQ9Ik0yNyAxNHYtMWEyIDIgMCAwMC0yLTJIN2EyIDIgMCAwMC0yIDJ2MWEyIDIgMCAwMC0xIDF2MmExIDEgMCAwMDEgMnYxYTIgMiAwIDAwMiAxaDE4YTIgMiAwIDAwMi0xdi0xYTIgMiAwIDAwMS0ydi0yYTIgMiAwIDAwLTEtMXpNMTYgMmExMCAxMCAwIDAwLTEwIDloMjBhMTAgMTAgMCAwMC0xMC05ek0xMyAyNGg2djFsMS0xLTEtMWgtN3YybDEtMXoiLz48cGF0aCBmaWxsPSIjZWMxYzI0IiBkPSJNMjQgMThIOGExIDEgMCAxMTAtM2gxNmExIDEgMCAwMTEgMSAxIDEgMCAwMS0xIDJ6Ii8+PHBhdGggZD0iTTIzIDIydjRhMiAyIDAgMDEtMiAyaC0xYTEgMSAwIDAxMC0xbC0yLTFhMSAxIDAgMDAwLTFoLTRhMSAxIDAgMDAwIDFsLTIgMWExIDEgMCAwMTAgMWgtMWEyIDIgMCAwMS0yLTJ2LTRIN3Y0YTQgNCAwIDAwNCA0aDEwYTQgNCAwIDAwNC00di00eiIvPjwvc3ZnPg==)
-![Deployment CI Badge](https://github.com/JoshSinyor/ruby-template/actions/workflows/rspec_tests.yml/badge.svg?branch=main)
+![Deployment CI Badge](https://github.com/JoshSinyor/review-04-03-2022/actions/workflows/rspec_tests.yml/badge.svg?branch=main)
 
 # Ruby Template
 
@@ -44,18 +44,21 @@ This project requires Ruby 3.0.0. If you do not have Ruby 3.0.0, install it usin
 
 ## Specification
 
-1. The purpose of this program is to accept input and product output.
-2. When the program receives input *a*, it should output *x* as an `Integer`.
-3. When the program receives input *b*, it should output *y* as a `String`.
-4. When the program receives input that is neither *a* nor *b*, it should output *z*.
+1. This company employs musicians that make EDM. They apply filters to their tracks, changing how the tracks sound.
+2. This program is a bandpass filter.
+3. The filter takes a soundwave as an input (an array of numbers). Any numbers in the array outside of a specific range need to be adjusted to within the upper and lower limits.
+4. All other frequencies should remain unchanged.
+5. Default lower limit of 40, default upper limit of 1,000.
+6. The user should be able to override the default limits.
+7. There may be corrupted inputs within an array which are not positive integers. If one is encountered, an error (`Error "Sound waves are not parsed correctly"`) should be raised.
+8. There may be a corrupted input which is not an array. If this is encountered, the same error (`Error "Sound waves are not parsed correctly"`) should be raised.
 
 ### Input/Output Table
 
 | Input | Output |
 |-------|--------|
-| *a* | `x` |
-| *b* | `y` |
-| *c* | `z` |
+| [60,10,45,60,1500] | [60,40,45,60,1000] |
+| "Hello" | Return error "Sound waves are not parsed correctly" |
 
 ---
 
@@ -63,18 +66,13 @@ This project requires Ruby 3.0.0. If you do not have Ruby 3.0.0, install it usin
 
 This program must:
 
-1. [ ] Upon input of *aa*, output *xx*.
-2. [ ] Upon input of *ab*, output *xy*.
-3. [ ] Upon input of *abc*, output *xyz*.
+1. [ ] Upon input of `[60,10,45,60,1500]`, output `[60,40,45,60,1000]`.
 
 ### Input/Output Table
 
 | Input | Output |
 |-------|--------|
-| *aa* | `xx` |
-| *ab* | `yy` |
-| *abc* | `xyz` |
-
+| [60,10,45,60,1500] | [60,40,45,60,1000] |
 ---
 
 ## Final Appearance
