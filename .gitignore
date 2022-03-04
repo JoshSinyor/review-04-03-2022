@@ -1,0 +1,11 @@
+# Ignore local temporary files
+.DS_Store
+
+# Ignore Bundler config
+/.bundle
+
+# Ignore local cache of Rubocop remote config
+.rubocop-*
+
+# Ignore local cache of SimpleCov
+/coverage
