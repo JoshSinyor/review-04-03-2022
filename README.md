@@ -67,7 +67,7 @@ This project requires Ruby 3.0.0. If you do not have Ruby 3.0.0, install it usin
 
 This program must:
 
-1. [ ] Upon input of `[60,10,45,60,1500]`, output `[60,40,45,60,1000]`.
+1. [x] Upon input of `[60,10,45,60,1500]`, output `[60,40,45,60,1000]`.
 
 ### Input/Output Table
 

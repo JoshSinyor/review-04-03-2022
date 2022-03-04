@@ -42,4 +42,8 @@ describe 'bandpass_filter' do
   it "filters out multiple frequencies that are above an overridden upper limit" do
     expect(bandpass_filter([40,50,1000,1100,1150],40,1100)).to eq [40,50,1000,1100,1100]
   end
+
+  it "passes the first acceptance criterion" do
+    expect(bandpass_filter([60,10,45,60,1500])).to eq [60,40,45,60,1000]
+  end
 end
