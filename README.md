@@ -52,6 +52,7 @@ This project requires Ruby 3.0.0. If you do not have Ruby 3.0.0, install it usin
 6. The user should be able to override the default limits.
 7. There may be corrupted inputs within an array which are not positive integers. If one is encountered, an error (`Error "Sound waves are not parsed correctly"`) should be raised.
 8. There may be a corrupted input which is not an array. If this is encountered, the same error (`Error "Sound waves are not parsed correctly"`) should be raised.
+9. This program needs to be run on streamed music, so it should process a full second of music (44,100 frequencies) in under 100ms.
 
 ### Input/Output Table
 
