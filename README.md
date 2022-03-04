@@ -4,9 +4,9 @@
 ![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen?&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGRlZnMvPjxwYXRoIGQ9Ik0yNyAxNHYtMWEyIDIgMCAwMC0yLTJIN2EyIDIgMCAwMC0yIDJ2MWEyIDIgMCAwMC0xIDF2MmExIDEgMCAwMDEgMnYxYTIgMiAwIDAwMiAxaDE4YTIgMiAwIDAwMi0xdi0xYTIgMiAwIDAwMS0ydi0yYTIgMiAwIDAwLTEtMXpNMTYgMmExMCAxMCAwIDAwLTEwIDloMjBhMTAgMTAgMCAwMC0xMC05ek0xMyAyNGg2djFsMS0xLTEtMWgtN3YybDEtMXoiLz48cGF0aCBmaWxsPSIjZWMxYzI0IiBkPSJNMjQgMThIOGExIDEgMCAxMTAtM2gxNmExIDEgMCAwMTEgMSAxIDEgMCAwMS0xIDJ6Ii8+PHBhdGggZD0iTTIzIDIydjRhMiAyIDAgMDEtMiAyaC0xYTEgMSAwIDAxMC0xbC0yLTFhMSAxIDAgMDAwLTFoLTRhMSAxIDAgMDAwIDFsLTIgMWExIDEgMCAwMTAgMWgtMWEyIDIgMCAwMS0yLTJ2LTRIN3Y0YTQgNCAwIDAwNCA0aDEwYTQgNCAwIDAwNC00di00eiIvPjwvc3ZnPg==)
 ![Deployment CI Badge](https://github.com/JoshSinyor/review-04-03-2022/actions/workflows/rspec_tests.yml/badge.svg?branch=main)
 
-# Ruby Template
+# Makers Review 2
 
-A template repository for Ruby projects.
+This repository reflects Makers coding review 2, conducted 04/03/2022.
 
 ---
 
@@ -25,16 +25,6 @@ A template repository for Ruby projects.
 
 ## Installation
 
-1. Create new repository from template.
-2. Switch to working directory. If using WSL, working directory is ``\\wsl$\Ubuntu\home\joshsinyor\gitRepos``.
-3. Clone repository using `git clone`.
-4. Initialise repository using `bundle update`.
-5. Modify `README.md` on lines 2, 3 and 5, changing repository name from template (`ruby-template`) to the new repository's name.
-6. Modify `README.md` on lines 7 and 9 to reflect the new repository's name and purpose.
-7. Delete this block of instructions (lines 28-37).
-8. Commit your changes.
-9. Rebase the initial commit using `git rebase -i --root`.
-
 This project requires Ruby 3.0.0. If you do not have Ruby 3.0.0, install it using [these instructions](https://www.ruby-lang.org/en/documentation/installation/).
 
 1. [Clone](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) or [fork](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo) this repository.
@@ -46,12 +36,13 @@ This project requires Ruby 3.0.0. If you do not have Ruby 3.0.0, install it usin
 
 1. This company employs musicians that make EDM. They apply filters to their tracks, changing how the tracks sound.
 2. This program is a bandpass filter.
-3. The filter takes a soundwave as an input (an array of numbers). Any numbers in the array outside of a specific range need to be adjusted to within the upper and lower limits.
-4. All other frequencies should remain unchanged.
-5. Default lower limit of 40, default upper limit of 1,000.
+3. The filter takes a soundwave as an input (an array of numbers, each number representing a frequency).
+4. Any frequency in the array lesser than the lower limit or greater than the upper limit must be set to the limit.
+5. There should be a default lower limit of 40 and a default upper limit of 1,000.
 6. The user should be able to override the default limits.
-7. There may be corrupted inputs within an array which are not positive integers. If one is encountered, an error (`Error "Sound waves are not parsed correctly"`) should be raised.
-8. There may be a corrupted input which is not an array. If this is encountered, the same error (`Error "Sound waves are not parsed correctly"`) should be raised.
+5. All frequencies within the limits should remain unchanged.
+7. There may be a corrupted input which is not an array. If one is encountered, an error (`Sound waves are not parsed correctly`) should be raised.
+8. There may be corrupted inputs within an array which are not positive integers. If this is encountered, the same error (`Sound waves are not parsed correctly`) should be raised.
 9. This program needs to be run on streamed music, so it should process a full second of music (44,100 frequencies) in under 100ms.
 
 ### Input/Output Table
@@ -59,7 +50,8 @@ This project requires Ruby 3.0.0. If you do not have Ruby 3.0.0, install it usin
 | Input | Output |
 |-------|--------|
 | [60,10,45,60,1500] | [60,40,45,60,1000] |
-| "Hello" | Return error "Sound waves are not parsed correctly" |
+| `'Hello World!'` | Error `Sound waves are not parsed correctly` |
+| [60,'Hello World!',1500] | Error `Sound waves are not parsed correctly` |
 
 ---
 
@@ -68,12 +60,15 @@ This project requires Ruby 3.0.0. If you do not have Ruby 3.0.0, install it usin
 This program must:
 
 1. [x] Upon input of `[60,10,45,60,1500]`, output `[60,40,45,60,1000]`.
+2. [x] Upon input of something which is not an array, raise error `Sound waves are not parsed correctly`.
+3. [ ] Upon input of something within an array which is not a positive integer, raise error `Sound waves are not parsed correctly`.
 
 ### Input/Output Table
 
 | Input | Output |
 |-------|--------|
 | [60,10,45,60,1500] | [60,40,45,60,1000] |
+| `'Hello World!'` | Error `Sound waves are not parsed correctly` |
 ---
 
 ## Final Appearance
