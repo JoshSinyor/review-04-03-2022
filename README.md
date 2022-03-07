@@ -45,16 +45,6 @@ This project requires Ruby 3.0.0. If you do not have Ruby 3.0.0, install it usin
 8. There may be corrupted inputs within an array which are not positive integers. If this is encountered, the same error (`Sound waves are not parsed correctly`) should be raised.
 9. This program needs to be run on streamed music, so it should process a full second of music (44,100 frequencies) in under 100ms.
 
-### Input/Output Table
-
-| Input | Output |
-|-------|--------|
-| [60,10,45,60,1500] | [60,40,45,60,1000] |
-| ([50, 100, 500, 1100, 1150], 100, 1100) | [100, 100, 500, 1100, 1100] |
-| `'Hello World!'` | Error `Sound waves are not parsed correctly` |
-| [60,'Hello World!',1500] | Error `Sound waves are not parsed correctly` |
-| [`44,100 entries`] | [`44,100 entries`] in under 100ms.|
-
 ---
 
 ## Acceptance Criteria
@@ -64,7 +54,7 @@ This program must:
 1. [x] Upon input of `[60,10,45,60,1500]`, output `[60,40,45,60,1000]`.
 2. [x] Upon input of something which is not an array, raise error `Sound waves are not parsed correctly`.
 3. [x] Upon input of something within an array which is not a positive integer, raise error `Sound waves are not parsed correctly`.
-4. [ ] The program must be able to process a full second of music (44,100 frequencies) in under 100ms.
+4. [x] The program must be able to process a full second of music (44,100 frequencies) in under 100ms.
 
 ### Input/Output Table
 
