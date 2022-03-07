@@ -21,7 +21,9 @@ describe 'bandpass_filter' do
   end
 
   it 'raises an error when a supplied array includes a non-positive integer' do
-    expect { bandpass_filter([30,40,'Hello World!',1000,1010]) }.to raise_error('Sound waves are not parsed correctly')
+    expect do
+      bandpass_filter([30, 40, 'Hello World!', 1000, 1010])
+    end.to raise_error('Sound waves are not parsed correctly')
   end
 
   it 'passes the first acceptance criterion' do
@@ -33,6 +35,8 @@ describe 'bandpass_filter' do
   end
 
   it 'passes the third acceptance criterion' do
-    expect { bandpass_filter([60,10,45,'Hello World!',1500]) }.to raise_error('Sound waves are not parsed correctly')
+    expect do
+      bandpass_filter([60, 10, 45, 'Hello World!', 1500])
+    end.to raise_error('Sound waves are not parsed correctly')
   end
 end

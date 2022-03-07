@@ -3,15 +3,18 @@
 def bandpass_filter(soundwave, lowerlimit = 40, upperlimit = 1000)
   raise 'Sound waves are not parsed correctly' unless soundwave.is_a? Array
 
-  soundwave.map! do |frequency|
-    raise 'Sound waves are not parsed correctly' unless frequency.is_a? Integer and frequency.positive?
+  map_soundwave(soundwave, lowerlimit, upperlimit)
+end
 
-    if frequency < lowerlimit
-      lowerlimit
-    elsif frequency > upperlimit
-      upperlimit
-    else
-      frequency
-    end
+private
+
+def map_soundwave(soundwave, lowerlimit, upperlimit)
+  soundwave.map! do |frequency|
+    raise 'Sound waves are not parsed correctly' unless frequency.is_a?(Integer) && frequency.positive?
+
+    next(lowerlimit) if frequency < lowerlimit
+    next(upperlimit) if frequency > upperlimit
+
+    frequency
   end
 end
