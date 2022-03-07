@@ -12,7 +12,6 @@ This repository reflects Makers coding review 2, conducted 04/03/2022.
 
 - [Installation](#installation)
 - [Specification](#specification)
-  * [Input/Output Table](#input-output-table)
 - [Acceptance Criteria](#acceptance-criteria)
   * [Input/Output Table](#input-output-table)
 - [Final Appearance](#final-appearance)
@@ -58,18 +57,18 @@ This program must:
 
 ### Input/Output Table
 
-| Input | Output |
-|-------|--------|
-| [60, 10, 45, 60, 1500] | [60, 40, 45, 60, 1000] |
-| ([50, 100, 500, 1100, 1150], 100, 1100) | [100, 100, 500, 1100, 1100] |
-| `'Hello World!'` | Error `Sound waves are not parsed correctly` |
-| [60, 10, 45, 'Hello World!', 1500] | Error `Sound waves are not parsed correctly` |
-| [`44,100 entries`] | [`44,100 entries`] in under 100ms.|
+| Input                                   | Output                                        |
+|-----------------------------------------|-----------------------------------------------|
+| [60, 10, 45, 60, 1500]                  | [60, 40, 45, 60, 1000]                        |
+| ([50, 100, 500, 1100, 1150], 100, 1100) | [100, 100, 500, 1100, 1100]                   |
+| `'Hello World!'`                        | Error  `Sound waves are not parsed correctly` |
+| [60, 10, 45, 'Hello World!', 1500]      | Error  `Sound waves are not parsed correctly` |
+| [60, 10, 45, -60, 1500]                 | Error  `Sound waves are not parsed correctly` |
+| [ `44,100 entries` ]                    | [ `44,100 entries` ] in under 100ms.          |
+
 ---
 
 ## Final Appearance
-
-To take a screenshot of the window in Windows, use shortcut `⊞ + Shift + S`. To take a screenshot of the window on OSX, use shortcut `Shift + ⌘ + 5`.
 
 This program is pictured below executing the instructions in the Acceptance Criteria.
 
