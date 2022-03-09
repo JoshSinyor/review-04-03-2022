@@ -1,8 +1,8 @@
 ![Ruby Version](https://img.shields.io/badge/ruby-3.0-red?logo=ruby)
-![License](https://img.shields.io/github/license/JoshSinyor/review-04-03-2022)
-![Code Size](https://img.shields.io/github/languages/code-size/JoshSinyor/review-04-03-2022)
+![License](https://img.shields.io/github/license/JoshSinyor/review-2022-03-04)
+![Code Size](https://img.shields.io/github/languages/code-size/JoshSinyor/review-2022-03-04)
 ![Ruby Style Guide](https://img.shields.io/badge/code_style-rubocop-brightgreen?&logo=data:image/svg%2bxml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiI+PGRlZnMvPjxwYXRoIGQ9Ik0yNyAxNHYtMWEyIDIgMCAwMC0yLTJIN2EyIDIgMCAwMC0yIDJ2MWEyIDIgMCAwMC0xIDF2MmExIDEgMCAwMDEgMnYxYTIgMiAwIDAwMiAxaDE4YTIgMiAwIDAwMi0xdi0xYTIgMiAwIDAwMS0ydi0yYTIgMiAwIDAwLTEtMXpNMTYgMmExMCAxMCAwIDAwLTEwIDloMjBhMTAgMTAgMCAwMC0xMC05ek0xMyAyNGg2djFsMS0xLTEtMWgtN3YybDEtMXoiLz48cGF0aCBmaWxsPSIjZWMxYzI0IiBkPSJNMjQgMThIOGExIDEgMCAxMTAtM2gxNmExIDEgMCAwMTEgMSAxIDEgMCAwMS0xIDJ6Ii8+PHBhdGggZD0iTTIzIDIydjRhMiAyIDAgMDEtMiAyaC0xYTEgMSAwIDAxMC0xbC0yLTFhMSAxIDAgMDAwLTFoLTRhMSAxIDAgMDAwIDFsLTIgMWExIDEgMCAwMTAgMWgtMWEyIDIgMCAwMS0yLTJ2LTRIN3Y0YTQgNCAwIDAwNCA0aDEwYTQgNCAwIDAwNC00di00eiIvPjwvc3ZnPg==)
-![Deployment CI Badge](https://github.com/JoshSinyor/review-04-03-2022/actions/workflows/rspec_tests.yml/badge.svg?branch=main)
+![Deployment CI Badge](https://github.com/JoshSinyor/review-2022-03-04/actions/workflows/rspec_tests.yml/badge.svg?branch=main)
 
 # Makers Review 2
 
