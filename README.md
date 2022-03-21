@@ -13,11 +13,11 @@ This repository reflects Makers coding review 2, conducted 04/03/2022.
 - [Installation](#installation)
 - [Specification](#specification)
 - [Acceptance Criteria](#acceptance-criteria)
-  * [Input/Output Table](#input-output-table)
+  * [Input/Output Table](#inputoutput-table)
 - [Final Appearance](#final-appearance)
 - [Dependencies](#dependencies)
-- [Author(s)](#author-s-)
-- [License(s)](#license-s-)
+- [Author(s)](#authors)
+- [License(s)](#licenses)
 - [Acknowledgements](#acknowledgements)
 
 ---
